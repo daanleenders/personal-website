@@ -9,6 +9,7 @@
   ],
   "dependencies": {
     "gatsby": "^1.9.209",
+    "gatsby-cli": "^1.1.44",
     "gatsby-image": "^1.0.31",
     "gatsby-link": "^1.6.32",
     "gatsby-plugin-google-analytics": "^1.0.14",
@@ -39,6 +40,5 @@
     "build": "npx gatsby build",
     "fix-semi": "eslint --quiet --ignore-pattern node_modules --ignore-pattern public --parser babel-eslint --no-eslintrc --rule '{\"semi\": [2, \"never\"], \"no-extra-semi\": [2]}' --fix gatsby-node.js"
   },
-  "devDependencies": {
-  }
+  "devDependencies": {}
 }
