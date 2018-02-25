@@ -22,7 +22,7 @@
     "gatsby-transformer-remark": "^1.7.25",
     "gatsby-transformer-sharp": "^1.6.16",
     "lodash": "^4.17.4",
-    "node-sass": "^4.7.2",
+    "node-sass": "^3.7.2",
     "react-images": "^0.5.14"
   },
   "homepage": "https://www.daanleenders.nl",
