@@ -1,44 +1,24 @@
 {
   "name": "personal-website",
-  "description": "My personal sity created with: Gatsby Starter - Strata by HTML5 UP",
-  "version": "1.0.0",
-  "private": true,
+  "description": "My personal - very empty - website",
+  "repository": "https://www.github.com/daanleenders/personal-website",
   "author": "Daan Leenders",
-  "contributors": [
-    "Hunter Chang"
-  ],
-  "dependencies": {
-    "gatsby": "^1.9.209",
-    "gatsby-cli": "^1.1.44",
-    "gatsby-image": "^1.0.31",
-    "gatsby-link": "^1.6.32",
-    "gatsby-plugin-google-analytics": "^1.0.14",
-    "gatsby-plugin-react-helmet": "^1.0.8",
-    "gatsby-plugin-sass": "^1.0.15",
-    "gatsby-plugin-sharp": "^1.6.24",
-    "gatsby-remark-copy-linked-files": "^1.5.25",
-    "gatsby-remark-images": "^1.5.36",
-    "gatsby-source-filesystem": "^1.5.11",
-    "gatsby-transformer-remark": "^1.7.25",
-    "gatsby-transformer-sharp": "^1.6.16",
-    "lodash": "^4.17.4",
-    "node-sass": "^3.7.2",
-    "react-images": "^0.5.14"
-  },
-  "homepage": "https://www.daanleenders.nl",
   "license": "MIT",
-  "main": "n/a",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/daanleenders/personal-website.git"
+  "version": "0.0.1",
+  "dependencies": {
+    "gatsby": "^1.9.241",
+    "gatsby-link": "^1.6.39",
+    "gatsby-plugin-react-helmet": "^2.0.8",
+    "react-helmet": "^5.2.0"
   },
   "scripts": {
-    "dev": "npx gatsby develop",
-    "lint": "./node_modules/.bin/eslint --ext .js,.jsx --ignore-pattern public .",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "develop": "npx gatsby develop",
-    "build": "npx gatsby build",
-    "fix-semi": "eslint --quiet --ignore-pattern node_modules --ignore-pattern public --parser babel-eslint --no-eslintrc --rule '{\"semi\": [2, \"never\"], \"no-extra-semi\": [2]}' --fix gatsby-node.js"
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write 'src/**/*.js'",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "gatsby-cli": "^1.1.48",
+    "prettier": "^1.11.1"
+  }
 }

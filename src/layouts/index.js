@@ -1,24 +1,35 @@
 import React from 'react'
-import Link from 'gatsby-link'
-import '../assets/scss/main.scss'
+import PropTypes from 'prop-types'
+import Helmet from 'react-helmet'
 
-import Header from '../components/Header'
+import Header from '../components/Header/index'
+import './index.css'
 
-class Template extends React.Component {
-    render() {
-        const { children } = this.props
+const TemplateWrapper = ({ children }) => (
+  <div>
+    <Helmet
+      title="Gatsby Default Starter"
+      meta={[
+        { name: 'description', content: 'Sample' },
+        { name: 'keywords', content: 'sample, something' },
+      ]}
+    />
+    <Header />
+    <div
+      style={{
+        margin: '0 auto',
+        maxWidth: 960,
+        padding: '0px 1.0875rem 1.45rem',
+        paddingTop: 0,
+      }}
+    >
+      {children()}
+    </div>
+  </div>
+)
 
-        return (
-            <div>
-                <Header />
-                {children()}
-            </div>
-        )
-    }
+TemplateWrapper.propTypes = {
+  children: PropTypes.func,
 }
 
-Template.propTypes = {
-    children: React.PropTypes.func
-}
-
-export default Template
+export default TemplateWrapper
