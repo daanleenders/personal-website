@@ -2,7 +2,7 @@ import React from 'react'
 
 import Section from '../components/section.js'
 import styles from './index.module.css'
-import logo from './Tracebuzz_diap_eye.svg';
+import logo from '../assets/Tracebuzz_diap_eye.svg';
 
 const IndexPage = () => (
   <Section>
