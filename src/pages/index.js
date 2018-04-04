@@ -2,6 +2,7 @@ import React from 'react'
 
 import Section from '../components/section.js'
 import styles from './index.module.css'
+import logo from './Tracebuzz_diap_eye.svg';
 
 const IndexPage = () => (
   <Section>
@@ -10,7 +11,7 @@ const IndexPage = () => (
           <h1 id={'name'}>Daan Leenders</h1>
       </div>
       <div className={styles.currentJob}>
-          <img src="https://source.unsplash.com/random/60x60" alt="" />
+          <img src={logo} alt="Tracebuzz logo" />
           <div className={styles.column}>
               <label htmlFor={'currentJob'}>Currently</label>
               <p id={'currentJob'}>

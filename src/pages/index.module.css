@@ -22,6 +22,10 @@ label {
 .currentJob img  {
     width: 60px;
     height: 60px;
+    padding: 10px;
+    box-sizing: border-box;
+
+    background-color: #f68b1f;
 }
 
 .currentJob .column {
