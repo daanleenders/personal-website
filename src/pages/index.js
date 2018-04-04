@@ -1,13 +1,39 @@
 import React from 'react'
-import Link from 'gatsby-link'
+
+import Section from '../components/section.js'
+import styles from './index.module.css'
 
 const IndexPage = () => (
-  <div>
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <Link to="/page-2/">Go to page 2</Link>
-  </div>
-)
+  <Section>
+      <div className={styles.name}>
+          <label htmlFor={'name'}>Name</label>
+          <h1 id={'name'}>Daan Leenders</h1>
+      </div>
+      <div className={styles.currentJob}>
+          <img src="https://source.unsplash.com/random/60x60" alt="" />
+          <div className={styles.column}>
+              <label htmlFor={'currentJob'}>Currently</label>
+              <p id={'currentJob'}>
+                  Developer,
+                  &nbsp;
+                  <a href="https://www.tracebuzz.com/">Tracebuzz</a>
+              </p>
+          </div>
+          <div className={styles.column}>
+              <label htmlFor={'challenge'}>Challenge</label>
+              <p id={'challenge'}>
+                  Creating Customer Happiness
+              </p>
+          </div>
 
-export default IndexPage
+      </div>
+    {/*<h1>Hello world</h1>*/}
+    {/*<p>Welcome to your new Gatsby site.</p>*/}
+    {/*<p>Now go build something great.</p>*/}
+    {/*<img src="https://source.unsplash.com/random/400x200" alt="" />*/}
+    {/*<br />*/}
+    {/*<Link to="/page-2/">Go to page 2</Link>*/}
+  </Section>
+);
+
+export default IndexPage;

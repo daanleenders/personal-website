@@ -1,0 +1,30 @@
+label {
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    color: #bbb;
+    font-size: 0.7em;
+    font-weight: 600;
+}
+
+.name {
+    padding: 0 0.75rem 0 calc(0.75rem + 60px);
+    margin-bottom: 3rem;
+}
+
+.name h1 {
+    margin: 3px 0 0;
+}
+
+.currentJob {
+    display: flex;
+}
+
+.currentJob img  {
+    width: 60px;
+    height: 60px;
+}
+
+.currentJob .column {
+    flex: 1;
+    padding: 0 0.75rem;
+}
