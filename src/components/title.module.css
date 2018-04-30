@@ -1,0 +1,13 @@
+.title {
+    display: block;
+    width: 30%;
+}
+
+.title h3 {
+    margin-top: 0;
+    font-variant: small-caps;
+    letter-spacing: .05em;
+    color: #737373;
+    font-size: 1rem;
+    font-weight: 300;
+}
