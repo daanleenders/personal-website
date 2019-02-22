@@ -18,8 +18,8 @@
     "typography-theme-fairy-gates": "^0.16.0npm run dev"
   },
   "devDependencies": {
-    "gatsby-cli": "^1.1.48",
-    "prettier": "^1.11.1"
+    "gatsby-cli": "^2.4.11",
+    "prettier": "^1.16.4"
   },
   "scripts": {
     "build": "npx gatsby build",
