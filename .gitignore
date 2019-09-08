@@ -9,3 +9,8 @@ yarn-error.log
 
 # Build directory
 /public
+
+!/.idea
+/.idea/httpRequests/
+/.idea/dictionaries/
+/.idea/workspace.xml

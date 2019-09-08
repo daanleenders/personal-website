@@ -1,6 +1,16 @@
 module.exports = {
   siteMetadata: {
-    title: 'Daan Leenders',
+      person: {
+          name: 'Daan Leenders',
+          currentJob: {
+              title: 'Lead developer',
+              challenge: 'Growing a dev team and improving a legacy application',
+              company: {
+                  name: 'Tracebuzz',
+                  site: 'https://www.tracebuzz.com'
+              },
+          }
+      }
   },
   plugins: [
       'gatsby-plugin-react-helmet',
@@ -9,6 +19,15 @@ module.exports = {
           options: {
               pathToConfigModule: `src/utils/typography.js`,
           },
-      }
+      },
+      {
+          resolve: `gatsby-source-filesystem`,
+          options: {
+              path: `${__dirname}/src/`,
+          },
+      },
+      `gatsby-transformer-remark`,
+      `gatsby-transformer-sharp`,
+      `gatsby-plugin-sharp`,
   ]
 };

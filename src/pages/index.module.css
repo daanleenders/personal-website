@@ -7,16 +7,23 @@ label {
 }
 
 .name {
-    padding: 0 0.75rem 0 calc(0.75rem + 60px);
+    padding: 0 0.75rem;
     margin-bottom: 3rem;
+}
+
+.name .fakeImage {
+    width: 60px;
+    height: 0px;
 }
 
 .name h1 {
     margin: 3px 0 0;
 }
 
-.currentJob {
+.currentJob, .name {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .currentJob img  {
@@ -28,7 +35,14 @@ label {
     background-color: #f68b1f;
 }
 
-.currentJob .column {
+.column {
     flex: 1;
     padding: 0 0.75rem;
+}
+
+.featureImage {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
 }

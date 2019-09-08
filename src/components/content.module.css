@@ -1,0 +1,19 @@
+.content {
+    display: block;
+    width: 70%;
+
+    column-count: 2;
+    column-gap: 50px;
+}
+
+.content h3 {
+    margin-top: 0;
+    column-span: all;
+    font-weight: 300;
+}
+
+.content p {
+    text-align: start;
+    margin-bottom: 1rem;
+    font-size: 0.85rem;
+}

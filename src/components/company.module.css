@@ -1,0 +1,24 @@
+.company {
+    margin-bottom: 1rem;
+}
+
+.name {
+    margin: 0;
+}
+
+.time {
+    font-size: 0.7rem;
+    margin-bottom: 0.25rem;
+}
+
+.start {}
+.end {}
+.start, .end {
+    color: grey;
+}
+
+.description {
+    text-align: justify;
+    text-align-last: start;
+    font-size: 0.85rem;
+}
