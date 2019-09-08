@@ -3,11 +3,10 @@ module.exports = {
       person: {
           name: 'Daan Leenders',
           currentJob: {
-              title: 'Developer',
-              challenge: 'Creating Customer Happiness',
+              title: 'Lead developer',
+              challenge: 'Growing a dev team and improving a legacy application',
               company: {
                   name: 'Tracebuzz',
-                  image: 'x',
                   site: 'https://www.tracebuzz.com'
               },
           }

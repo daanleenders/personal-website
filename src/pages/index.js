@@ -1,17 +1,18 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 
 import Section from '../components/section.js'
 import Title from '../components/title.js'
 import Content from '../components/content.js'
-import Company from '../components/company.js'
+// import Company from '../components/company.js'
 
 import styles from './index.module.css'
 
 import logo from '../assets/Tracebuzz_diap_eye.svg'
 import featureImage from '../assets/profile_feature_image_daan.jpg'
+import { graphql } from 'gatsby'
 
 const IndexPage = ({ data }) => {
-  console.log(data)
+  console.log(data);
   return (
     <div>
       <Section type="normal">
@@ -70,28 +71,41 @@ const IndexPage = ({ data }) => {
             started a study 'Information Engineering'. That study combines
             development, research, business administaration and project
             management. This combination taught me to always consider the big
-            picture and put emphasis on the user experience, aswell as it gave
-            my a lot of development experience through many internships.
+            picture and put emphasis on the user experience, as well as it gave
+            me a lot of development experience through many internships.
           </p>
           <p>
             I stuck around at the company of one of those internships,
-            Tracebuzz, .
+            Tracebuzz. A company that helps other companies create better and
+            more personal customer service experiences. When I started we really
+            focused on monitoring what people were saying about you but just
+            dipping our toes in actually responding to these people.
           </p>
-          {/*<p>Aut optio impedit incidunt placeat deleniti repudiandae non. Iure doloremque omnis sed necessitatibus vitae et. Quisquam ratione aut nostrum assumenda. Doloribus suscipit vel dicta nihil nam quibusdam ullam. Rerum vitae ea saepe qui id. Accusantium repudiandae at pariatur quia dignissimos rerum nam.</p>*/}
-          {/*<p>Saepe ipsa ut et amet laboriosam et beatae. Quasi reprehenderit veritatis quidem. Hic quia sunt consequatur tenetur deserunt. A iusto ut enim.</p>*/}
+          <p>
+            I worked on transitioning our product from monitoring to engagement.
+            Created and maintained many integrations with social media platforms
+            and messaging channels. Helped build a new inbox that allows users
+            to have realtime conversations and grown that platform to support
+            hundreds of users simultaneously.
+          </p>
+          <p>&nbsp;</p>
         </Content>
       </Section>
-      <Section type="flexRow">
-        <Title name="Experience" />
-        <div>
-          {data.allMarkdownRemark.edges.map(({ node }) => (
-            <Company key={node.id} name={node.frontmatter.title} description={node.excerpt} />
-          ))}
-        </div>
-      </Section>
+      {/*<Section type="flexRow">*/}
+      {/*  <Title name="Experience" />*/}
+      {/*  <div>*/}
+      {/*    {data.allMarkdownRemark.edges.map(({ node }) => (*/}
+      {/*      <Company*/}
+      {/*        key={node.id}*/}
+      {/*        name={node.frontmatter.title}*/}
+      {/*        description={node.excerpt}*/}
+      {/*      />*/}
+      {/*    ))}*/}
+      {/*  </div>*/}
+      {/*</Section>*/}
     </div>
   )
-}
+};
 
 export default IndexPage
 
@@ -106,7 +120,6 @@ export const query = graphql`
             challenge
             company {
               name
-              image
               site
             }
           }
@@ -125,4 +138,4 @@ export const query = graphql`
       }
     }
   }
-`
+`;
