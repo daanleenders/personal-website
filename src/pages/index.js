@@ -3,16 +3,14 @@ import React from 'react'
 import Section from '../components/section.js'
 import Title from '../components/title.js'
 import Content from '../components/content.js'
-// import Company from '../components/company.js'
-
 import styles from './index.module.css'
 
 import logo from '../assets/Tracebuzz_diap_eye.svg'
-import featureImage from '../assets/profile_feature_image_daan.jpg'
-import { graphql } from 'gatsby'
+import {graphql} from 'gatsby'
+import Img from 'gatsby-image'
+// import Company from '../components/company.js'
 
 const IndexPage = ({ data }) => {
-  console.log(data);
   return (
     <div>
       <Section type="normal">
@@ -49,11 +47,7 @@ const IndexPage = ({ data }) => {
         {/*<Link to="/page-2/">Go to page 2</Link>*/}
       </Section>
       <Section type="fullWidth">
-        <img
-          src={featureImage}
-          alt="Daan Leenders"
-          className={styles.featureImage}
-        />
+        <Img fluid={data.file.childImageSharp.fluid} alt="Daan Leenders" />
       </Section>
       <Section type="flexRow">
         <Title name="Background" />
@@ -123,6 +117,13 @@ export const query = graphql`
               site
             }
           }
+        }
+      }
+    }
+    file(relativePath: { eq: "assets/profile_feature_image_daan.jpg" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
         }
       }
     }
