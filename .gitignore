@@ -11,3 +11,6 @@ yarn-error.log
 /public
 
 !/.idea
+/.idea/httpRequests/
+/.idea/dictionaries/
+/.idea/workspace.xml
