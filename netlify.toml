@@ -1,0 +1,9 @@
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Content-Security-Policy: default-src 'self'
+    Permissions-Policy: interest-cohort=()
+    Referrer-Policy: no-referrer
+    X-Content-Type-Options: nosniff
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
