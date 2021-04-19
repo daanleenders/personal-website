@@ -1,7 +1,7 @@
 [[headers]]
   for = "/*"
   [headers.values]
-    Content-Security-Policy = "default-src 'self'; font-src 'self' fonts.googleapis.com; img-src 'self' data:; script-src: 'unsafe-inline'; style-src 'unsafe-inline'; form-action: 'none'; frame-ancestors: 'none'; block-all-mixed-content"
+    Content-Security-Policy = "default-src 'self'; font-src 'self' fonts.googleapis.com; img-src 'self' data:; script-src 'unsafe-inline'; style-src 'unsafe-inline'; form-action 'none'; frame-ancestors 'none'; block-all-mixed-content"
     Permissions-Policy = "interest-cohort=()"
     Referrer-Policy = "no-referrer"
     X-Content-Type-Options = "nosniff"
